@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookMarker</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container py-4 vh-100 text-white">
+    <div class="cover pb-5">
+      <h1 class="position-absolute">BOOKMARKER</h1>
+    </div>
+    <hr>
+    <div class="item text-center py-4 rounded-3 shadow-sm">
+      <h2><i class="fa-solid fa-bookmark pe-1"></i>Bookmark your favorit sites</h2>
+      <div class="from-group mx-5">
+        <label for="Name"><i class="fa-solid fa-book-bookmark pe-1"></i> Site Name</label>
+        <input type="text" name="SiteName" id="Name" placeholder="Site Name" class="my-3 form-control">
+      </div>
+      <div class="from-group mx-5">
+        <label for="URL"><i class="fa-solid fa-link pe-1"></i> Site URL</label>
+        <input type="text" name="SiteURL" id="URL" placeholder="Site URL" class="my-3 form-control">
+      </div>
+      <button type="button" id="addBtn" class="btn btn-info text-white" disabled>Submit</button>
+    </div>
+
+    <input type="text" onkeyup="search(this.value)" class="my-4 form-control" placeholder="Search by Bookmark name">
+    <hr>
+
+    <div class="output">
+      <table class="table">
+        <thead>
+
+        </thead>
+        <tbody id="tablebody">
+
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <h6>@ Hamada Wael 2024</h6>
+    </footer>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
